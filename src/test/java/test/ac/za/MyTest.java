@@ -24,5 +24,17 @@ public class MyTest {
         assertEquals(expected,actual);
     }
 
+    //assertNull Checks that the object is null
+    @Test
+    public void TestNull (){
+        //assertNull(me.Check(2));
+        assertNotNull(me.Check(2));
+    }
+
+    @Test
+    public  void CheckSame(){
+        assertSame(me.GetAge(2020,1992),me.GetAge(2020,1992));
+    }
+
 
 }
